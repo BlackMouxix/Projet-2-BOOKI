@@ -8,13 +8,18 @@ body{
 color: grey;
 }
 .lien1{
-    color: rgba(0, 101, 252, 1);
-     border-top: 3px solid #0065FC;
+    color: none;
+     border-top: none;
+}
+.lien1:hover{
+border-top: 3px solid #0065FC;
+color:rgba(0, 101, 252, 1)
+}
+.lien2:hover{
+border-top: 3px solid #0065FC;
+color:rgba(0, 101, 252, 1)
 }
 
-.lien2{
-
-}
 #logo{
 width: 61.09px;
 height: 19px;
@@ -38,7 +43,10 @@ a{
     text-decoration: none;
     color:black
 }
-
+.info i{
+border: 1px solid rgba(217, 217, 217, 1)
+;
+}
 nav{
     border: 1px s
    }
@@ -201,7 +209,7 @@ cursor: pointer;
 }
 .section_entier{
     width: 68%;
-    height: 707px;
+    height: 756px;
     padding-right: 6px;
     border-radius: 25px;
     background: #f4f3f3;
@@ -210,6 +218,7 @@ cursor: pointer;
 .etoile{
 color: rgba(0, 101, 252, 1);
 padding-left: 10px;
+font-size: 0px;
 }
 .titre_3{
     margin-left: 5%;
@@ -220,7 +229,10 @@ padding-left: 10px;
     margin-left: 5%;
     padding-top: 17px;
 }
-
+.etoile_2{
+font-size: 0px;
+margin-top: 48px;
+}
 .hebergement1{
     display: flex;
     background-color: rgb(255, 255, 255);
@@ -231,6 +243,7 @@ padding-left: 10px;
     margin-top: 3%;
     justify-content: space-between;
 }
+
 
 h3{
     font-size: 22px;
@@ -248,9 +261,14 @@ h3{
     cursor: pointer;
 
 }
+.hebergement_all p{
+font-size: 15px;
+margin-top: -5%;
+}
+
 .hebergement_all img {
     display: flex;
-    height: 124px;
+    height: 150px;
     width: 95%;
     border: 5px solid white;
     border-radius: 20px 20px 0px 0px;  
@@ -265,7 +283,7 @@ margin-left: 10px;
 
 .populaire_contenue{
 display: flex;
-height: 164px;
+height: 190px;
 box-shadow: 0px 0px 7px 0px #0000002e;
 border-radius: 20px;
 margin: 26px;
@@ -277,6 +295,9 @@ display: flex;
 flex-direction: column;
 padding-left: 6px;
 }
+.populaire_info p{
+margin-top: -5px;
+}
 
 .populaire_all{
 display: fle;
@@ -286,7 +307,7 @@ justify-content: space-between;
 }
 
 .populaire_contenue img {
-    height: 156px;
+    height: 183px;
     width: 40%;
     border-radius: 20px 0px 0px 20px;
     padding:3.6px;  
@@ -303,7 +324,7 @@ justify-content: space-between;
 width: 29%;
 background-color: rgba(242, 242, 242, 1);
 border-radius: 15px;
-height: 704px;
+height: 753px;
 
 }
 
@@ -325,7 +346,7 @@ height: 704px;
 }
 
 .afficher{
-justify-content: flex-start;
+
 }
 
 /*** ACITVITES A MARSEILL EN BAS LA !***/
@@ -370,8 +391,8 @@ width: 273px;
 /**FOOOOOOOTER**/
 
 .footer_all{
-    display: flex;
-    justify-content: space-between;
+display: flex;
+justify-content: space-between;
 background-color: rgba(242, 242, 242, 1);
 width: 100%;
 }
@@ -381,6 +402,10 @@ padding: 42px;
 
 ul{
     list-style: none;
+}
+
+.footer_all li{
+margin-bottom: 7%;
 }
 
 
@@ -396,32 +421,57 @@ padding-right: 0;
 display: flex;
 justify-content: center;
 }
+.container{
+width: 100%;
+}
 .lien1{
 border-top: none;
-border-bottom: 3px solid #0065FC;
+border-bottom: 3px solid rgba(242, 242, 242, 1);
+display: block;
+
+}
+.afficher{
+color: white;
 }
 nav{
     display: flex;
     flex-direction: column;
+    margin-bottom: -11%;
     }
-    .lien1:hover {
-        border-top: 0;
-        border-bottom: 5px solid blue;
-        }
+.lien1:hover {
+border-top: 0;
+border-bottom: 3px solid rgba(0, 101, 252, 1);
+}
+.lien2:hover {
+border-top: 0;
+border-bottom: 3px solid rgba(0, 101, 252, 1);
+}
 h2{
 display: flex;
 justify-content: flex-start;
 }
+.labar1{
+width: 100%;
+text-align: center;
+}
+.labar2{
+width: 100%;
+text-align: center;
+}
 .hebergement1{
 display: flex;
-width: 100%;
+width: 96%;
 height: auto;
-gap: 20px;
 border-radius: 20px;
 flex-direction: column-reverse;
 padding: 3.5px;
 justify-content: space-between;
 }     
+.lien2{
+display: block;
+border-bottom: 3px solid rgba(242, 242, 242, 1);
+
+}
 .filtre_d{
 display: flex;
 flex-direction: column;
@@ -445,7 +495,7 @@ width: 100%;
 display: flex;
 justify-content: left;
 margin: 1rem;
-padding: 1.2rem;
+padding: 3%;
 align-items: center;
 }
 .englobe strong{
@@ -462,10 +512,13 @@ border-radius: 0px;
  display: flex;
 justify-content: space-between;
 margin-left: 5%;
-width: 306%;
+width: 100%;
 height: auto;
 gap: 20px;
 flex-direction: column;   
+}
+.hebergement_all{
+width: 95%;
 }
 .section_entier{
 width: 100%;
@@ -485,13 +538,17 @@ display: flex;
 flex-direction: column;
 margin: 8%;
 }
+.autour{
+cursor: pointer;
+}
 .footer_all{
 display: flex;
 flex-direction: column;
 margin-top: 55px;
 }
 .main1{
-margin: 8%;
+margin-top: 19%;
+margin-left: 8%;
 }
 .allezlom{
 margin-left: 5%;
@@ -509,7 +566,13 @@ height: 143px;
 width: 100%;
 }
 .footer_ligne{
-padding: 42px;
+padding: 28px;
+}
+.etoile_2{
+margin-top: 26px;
+}
+.populaire_info p{
+margin-top: -6px;
 }
 }
 
@@ -533,7 +596,10 @@ height: 344px;
 .filtre_d{
 
 }
-
+.etoile_2{
+font-size: 0px;
+margin-top: 34px;
+}
 .populaire_test{
 display: flex;
 }
@@ -583,7 +649,37 @@ article img {
 width: 100%;
 height: 267px;
 }
+#activites_lien{
+height: 459px;
+}
+.lien1:hover{
+border-top: 3px solid #0065FC;
+color:rgba(0, 101, 252, 1)
+}
+.lien1{
+color: black;
+border-top: none;
+}
+.populaire_info p{
+margin-top: -8px;
+}
+
+
+}
+
+/**********ENTRE LA TABLETTE ET LE PC ************/
+
+@media screen and (min-width: 1027px) and (max-width: 1200px){
+.autour{
+width: 212px;
 
 }
 
 
+}
+
+@media screen and (min-width: 1350px) and (max-width: 2000px){
+.allezlom{
+margin-top: 20%;
+}
+}
