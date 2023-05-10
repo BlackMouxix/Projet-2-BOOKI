@@ -1,5 +1,7 @@
 body{
     font-family: 'Raleway', sans-serif;
+    max-width: 1440px;
+    margin: auto;
 }
 .etoile_gris{
 color: grey;
@@ -21,6 +23,7 @@ width: 61.09px;
 height: 19px;
 text-align: center;
 margin-bottom: 35px;
+margin-top: 1rem;
 
 
 }
@@ -46,13 +49,12 @@ nav{
     border: 1px;
    }
 nav a{
-    padding: 2rem;
+    padding: 1.5rem;
 }
 nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 25px;
     
 }
 ul{
