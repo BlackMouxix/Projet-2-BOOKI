@@ -1,7 +1,7 @@
 body{
-    font-family: 'Raleway', sans-serif;
-    max-width: 1440px;
-    margin: auto;
+font-family: 'Raleway', sans-serif;
+max-width: 1440px;
+margin: auto;
 }
 .etoile_gris{
 color: grey;
@@ -44,6 +44,10 @@ a{
 }
 .info i{
 border: 1px solid rgba(217, 217, 217, 1);
+color: rgba(0, 101, 252, 1);
+}
+#icone i{
+margin-right: 0%;
 }
 nav{
     border: 1px;
@@ -79,9 +83,8 @@ p{
 }
 
 #research_input{
-    border: none;
-    height: 43px;
-    width: 176px;
+border: 1px solid rgba(242, 242, 242, 1);
+width: 176px;
 }
 
 #research{
@@ -104,7 +107,6 @@ p{
 
 #icone{
     display: flex;
-    margin-right: 10px;
     background-color: #F2F2F2;
     height: 43px;
     width: 48px;
@@ -114,10 +116,11 @@ p{
     justify-content: center;
 }
 
-h2{
+.filtre_d p {
     display:flex;
     justify-content: flex-end;
     font-size: 18px;
+    font-weight: bold;
 
 }
 .englobe{
@@ -183,7 +186,7 @@ cursor: pointer;
     margin-top: 30px;
     }
     .fa-solid{
-       color:#0065FC;
+       color: black;
        border-radius: 50px;
        border: solid 2px #eadddd;
        margin-right: 8px;
@@ -286,6 +289,9 @@ margin: 26px;
 background-color: white;
 cursor: pointer;
 }
+.populaire_icon h2{
+    margin-left: 35px;
+}
 .populaire_info{
 display: flex;
 flex-direction: column;
@@ -348,6 +354,9 @@ margin-left: 15px;
 font-size: 19px;
 ;
 }
+.activites_cases{
+flex: 1 1 130%;
+}
 #activites{
 margin-top: 285px;
 }
@@ -363,12 +372,12 @@ margin-top: 25%;
 color: black;
 font-size: 22px;
 font-weight: bold;
+margin-left: 0;
 }
 
 .activites_all{
 display: flex;
 justify-content: space-between;
-height: 407px;
 }
 
 .autour{
@@ -389,6 +398,7 @@ width: 100%;
 }
 .footer_ligne{
 padding: 42px;
+margin-right: 16%;
 }
 
 ul{
@@ -408,6 +418,23 @@ body{
 margin: 0%;
 padding-left: 0;
 padding-right: 0;
+}
+#button_research{
+display: none;
+}
+.filtre_d p{
+display: flex;
+justify-content: flex-start;
+margin-bottom: -2%;
+}
+#la_loupe{
+display: inline;
+background-color: #0065FC;
+border-radius: 0px 15px 15px 0px;
+border: 1px solid #0065FC;
+width: 13%; 
+color: rgba(255, 255, 255, 1);
+
 }
 #research{
 display: flex;
@@ -465,6 +492,7 @@ border-bottom: 3px solid rgba(242, 242, 242, 1);
 .filtre_d{
 display: flex;
 flex-direction: column;
+margin-top: 0;
 }
 .englobe{
 display: grid;
